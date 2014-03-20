@@ -24,6 +24,7 @@ var app = {
     showAlert: function (message, title) {
         if (navigator.notification) {
             navigator.notification.alert(messae, null, title, 'OK');
+            alert(title ? (title + ": " + message) : message);
         } else {
             alert(title ? (title + ": " + message) : message);
         }
