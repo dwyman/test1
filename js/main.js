@@ -23,7 +23,8 @@ var app = {
 
     showAlert: function (message, title) {
         if (navigator.notification) {
-            navigator.notification.alert(messae, null, title, 'OK');
+            alert('going to call nav-lert');
+            navigator.notification.alert(message, null, title, 'OK');
         } else {
             alert(title ? (title + ": " + message) : message);
         }
